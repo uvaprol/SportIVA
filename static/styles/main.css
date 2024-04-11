@@ -1,0 +1,423 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4bae3b;
+  border-radius: 20px;
+}
+
+* {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  border: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat";
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+body header {
+  animation: 30s ease-in infinite slide;
+  height: 100vh;
+}
+@keyframes slide {
+  0% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 1.svg);
+  }
+  33% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 1.svg);
+  }
+  38% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 2.svg);
+  }
+  66% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 2.svg);
+  }
+  71% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 3.svg);
+  }
+  97% {
+    background-image: url(../img/Главная\ страница\ слайдер\ 3.svg);
+  }
+}
+body header nav {
+  padding: 50px 0 25px calc((100% - 1000px) / 2);
+  background-color: rgba(125, 125, 125, 0.0745098039);
+  filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.1450980392));
+  display: flex;
+  align-items: center;
+}
+body header nav h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #4bae3b;
+}
+body header nav h2 span {
+  color: #797979;
+  margin-right: 140px;
+}
+body header nav a,
+body header nav img {
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+body header nav a:hover {
+  color: #4bae3b;
+}
+body header nav p:first-child {
+  margin-left: 0px;
+}
+body header h1 {
+  margin-left: calc((100% - 1000px) / 2);
+  margin-top: 200px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #4bae3b;
+  margin-bottom: 50px;
+}
+body header h1 span {
+  color: #fff;
+}
+body header p {
+  margin-left: calc((100% - 1000px) / 2);
+  font-size: 30px;
+  font-weight: normal;
+  color: lightgrey;
+}
+body header p span {
+  color: #4bae3b;
+}
+body header div {
+  margin-left: calc((100% - 1000px) / 2);
+  display: flex;
+  margin-top: 90px;
+}
+body header div p {
+  margin-left: 0;
+  margin-right: 35px;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: left;
+}
+body header div button {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 260px;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #36742c;
+}
+body main section {
+  padding: 75px 0 75px calc((100% - 1000px) / 2);
+}
+body main section h1 {
+  width: 1000px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+body main #advantages {
+  background-color: #414141;
+}
+body main #advantages div {
+  width: 1000px;
+  text-align: center;
+}
+body main #advantages div h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: normal;
+}
+body main #advantages div:last-child {
+  margin-top: 70px;
+  display: flex;
+}
+body main #advantages div:last-child p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+  width: 330px;
+  height: 135px;
+  font-size: 25px;
+  font-weight: normal;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+body main #advantages div:last-child p:first-child {
+  margin-left: 0;
+}
+body main #directions {
+  background-color: #4f8d45;
+}
+body main #directions div {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 1000px;
+}
+body main #directions div a {
+  border-radius: 20px;
+  font-size: 70px;
+  font-weight: lighter;
+  width: 450px;
+  padding: 95px 0;
+  text-align: center;
+  background-image: url(../img/dirCard1.svg);
+}
+body main #clubCards {
+  background-image: url(../img/ClubCards.svg);
+}
+body main #clubCards div {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+}
+body main #clubCards div a {
+  width: 700px;
+  padding: 185px 0;
+  border-radius: 30px;
+  background-image: url(../img/ClubCards.svg);
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+body main #clubCards div p {
+  padding: 185px 0;
+  text-align: end;
+  font-size: 30px;
+  font-weight: normal;
+}
+body main #coachingStaff {
+  background-color: #414141;
+  padding: 75px 0 0;
+}
+body main #coachingStaff h1 {
+  padding: 0 0 35px calc((100% - 1000px) / 2);
+}
+body main #coachingStaff div {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/Coach1.svg);
+}
+body main #coachingStaff div p {
+  cursor: pointer;
+  font-size: 100px;
+  font-weight: bold;
+}
+body main #contacts {
+  background-color: #4f8d45;
+}
+body main #contacts .contactCard {
+  margin-top: 50px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+body main #contacts .contactCard .contact h2,
+body main #contacts .contactCard .contact p,
+body main #contacts .contactCard .contact h4 {
+  font-weight: lighter;
+  color: #000;
+  font-size: 35px;
+  margin-top: 35px;
+}
+body main #contacts .contactCard .contact h4 {
+  font-weight: normal;
+  margin-top: 11px;
+  font-size: 20px;
+}
+body main #contacts .contactCard .contact p {
+  font-size: 20px;
+}
+body main #contacts .contactCard .contact h2:first-child {
+  margin-top: 0;
+}
+body main #contacts .contactCard iframe {
+  border-radius: 5px;
+}
+body footer {
+  padding: 60px 0 60px calc((100% - 1000px) / 2);
+}
+body footer h1,
+body footer h2 {
+  width: 1000px;
+  text-align: center;
+}
+body footer h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #4bae3b;
+}
+body footer h1 span {
+  color: #797979;
+}
+body footer h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: normal;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,212 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+$green: #4bae3b;
+$darkgreen: #36742c;
+$gray: #797979;
+$lightgrey: #ababab;
+$white: #fff;
+$space: calc((100% - 1000px) / 2);
+$bgDarkgreen: #4f8d45;
+$roundcolor: #D9D9D9;
+
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 3px;
+}
+body::-webkit-scrollbar-track {
+    background: #00000000;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $green;
+    border-radius: 20px;
+}
+
+* {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    border: none;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+
+body{
+    color: $white;
+    font-family: "Montserrat";
+    width: 100%;
+    background-image: url(../img/mainbg.svg);
+    background-color: #000;
+    header {
+        height: 100vh;
+        background-image: url(../img/ЙогаФон.svg);
+        nav {
+            padding: 50px 0 25px $space;
+            background-color: #7d7d7d13;
+            filter: drop-shadow(0px 4px #00000025);
+            display: flex;
+            align-items: center;
+            h2 {
+                font-size: 35px;
+                font-weight: bold;
+                color: $green;
+                span {
+                    color: $gray;
+                    margin-right: 140px;
+                }
+            }
+            a, img {
+                font-size: 15px;
+                font-weight: normal;
+                margin-left: 20px;
+            }
+            a:hover {
+                color: $green;
+            }
+            p:first-child {
+                margin-left: 0px;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            padding-top: 265px;
+        }
+    }
+    main{
+        section {
+            padding-left: $space;
+        }
+        #important, #structure{
+            margin: 100px 0;
+            display: flex;
+            img{
+                border-radius: 20px;
+            }
+            div{
+                margin-left: 48px;
+                h1{
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+                div{
+                    margin-top: 40px;
+                    margin-left: 0;
+                    display: flex;
+                    height: 50px;
+                    h4{
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $roundcolor;
+                        border-radius: 100px;
+                        font-size: 35px;
+                        font-weight: normal;
+                        color: #000;
+                    }
+                    p{
+                        display: flex;
+                        margin-left: 20px;
+                        align-items: center;
+                    }
+                }
+                
+            }
+        }
+        #structure{
+            div{
+                margin-left: 0;
+                margin-right: 48px;
+            }
+        }
+        #coachingStaff{
+            h1 {
+                width: 1000px;
+                text-align: center;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            div{
+                background-image: url(../img/Ellipse\ 6.svg);
+                background-size: contain;
+                display: flex;
+                width: 1000px;
+                justify-content: space-between;
+                div{
+                    display: block;
+                    img{
+                        margin-top: 70px;
+                        width: 422px;
+                        height: 560px;
+                        border-radius: 50px 0;
+                    }
+                    h2{
+                        margin-top: 22px;
+                        font-size: 40px;
+                        font-weight: lighter;
+                    }
+                    p{
+                        margin-top: 7px;
+                        font-size: 25px;
+                        font-weight: lighter;
+                    }
+                }
+                div:last-child{
+                    img{
+                        margin-top: 194px;
+                        width: 422px;
+                        height: 560px;
+                        border-radius: 50px 0;
+                    }
+                }
+            }
+            h1:last-child{
+                margin: 89px 0 50px;
+            }
+        }
+        #schedule{
+            background-color: #A4A0A250;
+            padding: 67px 0 85px $space;
+            h1 {
+                margin-bottom: 93px;
+                width: 1000px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: lighter;
+            }
+            h1:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    footer {
+        padding: 60px 0 60px $space;
+        h1,
+        h2 {
+            width: 1000px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: $green;
+            span {
+                color: $gray;
+            }
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+}
